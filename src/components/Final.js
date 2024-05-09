@@ -10,10 +10,10 @@ const Final = () =>{
             <h2 className="font-grace text-green-500 text-xl text-center mt-8">
             Success submitted
             </h2>
-            <h1 className="font-man mt-2 text-black font-semibold text-4xl text-center w-[30%]">
+            <h1 className="font-man mt-2 text-black font-semibold text-3xl md:text-4xl text-center w-[55%]">
             Congratulations
             </h1>
-            <p className="font-man text-gray-600 mt-4 w-[25em]">
+            <p className="font-man text-gray-600 mt-4 w-[17em] md:w-[25em] ml-4 md:ml-0">
                 Your request has been successfully submitted to us. We will validate your information and reach out to your <span className="text-center">shortly with updates</span>
 
             </p>

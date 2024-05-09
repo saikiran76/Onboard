@@ -113,7 +113,7 @@ const Signup = () => {
 
         
 
-        <div className="mx-auto w-[18em] md:w-[16em] mt-6" onClick={handleButtonClick}>
+        <div className="mx-auto w-[16em] md:w-[18em] mt-6" onClick={handleButtonClick}>
           <ValidButton
               name="Submit"
               width="w-[120%]"
