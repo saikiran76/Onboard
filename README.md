@@ -10,6 +10,10 @@ To document the local setup process for running the app using the npm package ma
 Mobile view
 ![alt text](image-1.png)
 PC view (Desktop)
+![alt text](image-2.png)
+Login form
+![alt text](image-3.png)
+Success page
 
 ## Local Setup
 
