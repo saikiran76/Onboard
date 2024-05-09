@@ -27,7 +27,7 @@ const FaContainer = () => {
         <h1 className="font-man text-3xl font-semibold">Ask Questions</h1>
       </div>
 
-      <div className="pl-12 pt-4 h-[25rem] md:pt-12 lg:pt-12 lg:m-auto md:m-auto mt-4">
+      <div className="pl-9 md:pl-12 pt-4 h-[25rem] md:pt-12 lg:pt-12 lg:m-auto md:m-auto mt-4">
         <div className="flex flex-col justify-start items-start gap-9 w-[90%] md:w-[581px] h-[70%] md:h-[512px] lg:h-[400px] box-border">
           {questions.map((question, index) => (
             <React.Fragment key={index}>

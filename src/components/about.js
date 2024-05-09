@@ -17,7 +17,7 @@ const About = () => {
           <div className="w-[100%] md:w-[50%] lg:w-[50%] picture-container relative">
             <div className="relative flex justify-center">
                 <div className="relative">
-                    <div className="image w-[50%] md:h-[18em] lg:h-[18em] overflow-hidden rounded-3xl ml-[14em] md:ml-[20em] lg:ml[20em] left-[5em]">
+                    <div className="image w-[50%] md:h-[18em] lg:h-[18em] overflow-hidden rounded-3xl ml-[11.5em] md:ml-[20em] lg:ml[20em] left-[3em] md:left-[5em]">
                         <img className="object-cover hover:object-scale-down" src="https://s3-alpha-sig.figma.com/img/c086/323e/b8fae54c91face434e9ea448a875ea3e?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CPPJu~LH5jYqxc8GcYbYi8GpYZgu3j-AFGk6P5AmeOJnOVh~MFFvaY-W2zLzP1Z-nbTnsFqaK9IwMhqY17hc~mTOe-T65fjKPsSLz2IuGlJPXLjCD0Nft~wq1uZntYN3HhCA5uVhv~0Et663QLCcv3lOLUCpuJFYrd1zDpR94UWGVhMmI-PnyW1EWDkGgfPIdMIBlyMQ5X9F7n2nNNI55Hp56B3F~tOPgUcBN9jDOTv2kKq1BuNYd-QxrPNSlQ~iJKerpafsOWRN14nu-xFnt8KbvT-IrBC3BatAs~MMcHy5IJBnBrAol9VY6q2kPz1p1ifSVXMX3tnrb9N4L74Zpg__" alt="abt"/>
                     </div>
                     <div className="rounded-2xl absolute top-[50px] md:top-[70px] right-[9em] md:right-[16em] bg-gray-100 p-3">
