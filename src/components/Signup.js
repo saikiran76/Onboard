@@ -20,7 +20,7 @@ const Signup = () => {
   const buttonRef = useRef(null);   
   const navigate = useNavigate();
 
-  console.log('current user state:', active)
+  console.log('current user state:', active) // debugging purpose
 
   useEffect(()=>{
     if(active){
@@ -54,7 +54,7 @@ const Signup = () => {
         setActive(true);
       }
     }
-    setActive(true);
+    // setActive(true);
   };
   
   // validation logic using regular expression
@@ -112,10 +112,10 @@ const Signup = () => {
 
         
 
-        <div className="mx-auto w-[16em] mt-6" onClick={handleButtonClick}>
+        <div className="mx-auto w-[18em] md:w-[16em] mt-6" onClick={handleButtonClick}>
           <ValidButton
               name="Submit"
-              width="w-[100%]"
+              width="w-[120%]"
               disabled={!active}
               error={emailError || passwordError} 
               ref={buttonRef} 
