@@ -21,9 +21,9 @@ const Header = () =>{
             {location.pathname === '/' ? (
                 <div className="buttons m-2 flex gap-2">
                     <Link to="/signup">
-                        <Button name="Get Projects" bgColor={"bg-gray-100"} textColor="text-zinc-700" />
+                        <Button name="Get Projects" bgColor="bg-[#ffff]" textColor="text-zinc-700" hover="hover:bg-zinc-100" />
                     </Link>
-                    <Button name="Onboard Talent" bgColor="bg-gray-900" textColor="text-zinc-200" />
+                    <Button name="Onboard Talent" bgColor="bg-gray-900" textColor="text-zinc-200" hover="hover:bg-transparent" />
                 </div>
             ) : (
                 <Link to="/" className="flex items-center">
