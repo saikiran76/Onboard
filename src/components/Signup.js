@@ -12,7 +12,7 @@ const Signup = () => {
 
   // state variables for validation of the form
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [name, setName] = useState('');
   const [isValid, setIsValid] = useState(false);
   const [emailError, setEmailError] = useState(''); 
   const [passwordError, setPasswordError] = useState(''); 
@@ -36,35 +36,34 @@ const Signup = () => {
     setEmailError(''); 
   };
   
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
+  const handleNameChange = (event) => {
+    setName(event.target.value);
     validateForm(); 
     setPasswordError(''); 
   };
   
   const handleButtonClick = () => {
     if (!isValid) {
-      if ((!email.trim() || !/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,}$/.test(email)) && password.length < 8) {
+      if ((!email.trim() || !/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,}$/.test(email)) && name.length < 4) {
         setEmailError('Email is invalid.');
-        setPasswordError('Password must be at least 8 characters.');
+        setPasswordError('Name must be atleast 4 characters.');
+        console.log("seems like there is some error")
       }else{
+        console.log("control has reached here")
         setIsValid(true)
         setActive(true);
       }
-      // if () {
-        
-      // }
-      
     }
+    setActive(true);
   };
   
   // validation logic using regular expression
   const validateForm = () => {
     const emailRegex = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,}$/; 
     const isValidEmail = emailRegex.test(email);
-    const isValidPassword = password.length >= 8; 
+    const isValidName = name.length >= 4; 
   
-    setIsValid(isValidEmail && isValidPassword); 
+    setIsValid(isValidEmail && isValidName); 
   };
     
 
@@ -79,24 +78,24 @@ const Signup = () => {
         </h1>
       </div>
 
-      <div className="border-gray-300 rounded-2xl border-l border-r border-t border-b w-[50%] mt-2 p-2">
+      <div className="w-[70%] md:w-[50%] mt-2 p-2">
 
-      <div className="mx-auto w-[16em] mt-3 mb-3">
+      <div className="mx-auto w-[16em] md:w-[20em] mt-3 mb-3">
           <input
             placeholder="Enter your name"
-            className={`object-cover overflow-hidden border-gray-300 rounded-[3rem] border-l border-r border-t border-b w-[100%] bg-zinc-100 mx-auto p-5 font-man ${
-              password.length < 8 ? 'border-red-500' : ''
+            className={`object-cover overflow-hidden border-gray-300 rounded-[3rem] border-l border-r border-t border-b w-[100%] bg-zinc-100 mx-0 md:mx-auto p-5 font-man ${
+              name.length < 4 ? 'border-red-500' : ''
             }`}
-            value={password}
-            onChange={handlePasswordChange}
-            type="password" 
+            value={name}
+            onChange={handleNameChange}
+            type="name" 
           />
    
-          {password.length < 8 && (
+          {name.length < 4 && (
             <p className="text-red-500 text-xs"></p>
           )}
         </div>
-        <div className="mx-auto w-[16em]">
+        <div className="mx-auto w-[16em] md:w-[20em]">
           <input
             placeholder="Enter your email"
             className={`object-cover overflow-hidden border-gray-300 bg-zinc-100 rounded-[3rem] border-l border-r border-t border-b w-[100%] mx-auto p-5 font-man ${

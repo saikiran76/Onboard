@@ -8,7 +8,8 @@ import { FaPlus } from "react-icons/fa";
 
 
 const FaContainer = () => {
-  // Define an array of questions
+
+  // array of faqs
   const questions = [
     { question: "Do you offer freelancers?", plusIcon: <FaPlus /> },
     { question: "What’s the guarantee that I will be satisfied with the hired talent?", plusIcon: <FaPlus /> },
@@ -17,8 +18,9 @@ const FaContainer = () => {
     { question: "Who can help me pick a right skillset and duration for me?", plusIcon: <FaPlus /> }
   ];
 
+
   return (
-    <div className="w-[90%] md:w-[1200px] lg:md-[1200px] h-[640px] md:h-[512px] bg-[#E8EEE7]
+    <div className="w-[90%] md:w-[1200px] lg:md-[1200px] h-[660px] md:h-[512px] bg-[#E8EEE7]
      flex flex-col md:flex md:flex-row lg:flex lg:flex-row gap-0 md:gap-9 lg:gap-9 mx-auto rounded-3xl">
       <div className="flex flex-col pt-12 md:pt-16 pl-6 md:pl-24">
         <h1 className="font-grace text-lg text-gray-300">Whats in your mind</h1>
