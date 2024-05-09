@@ -5,6 +5,12 @@ To document the local setup process for running the app using the npm package ma
 
 ---
 
+## Snaps of the website
+![alt text](image.png)
+Mobile view
+![alt text](image-1.png)
+PC view (Desktop)
+
 ## Local Setup
 
 To run the app locally, you need to have Node.js and npm installed on your machine. If you haven't installed them yet, you can download and install Node.js (which comes with npm) from [Node.js official website](https://nodejs.org/).
