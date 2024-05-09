@@ -55,6 +55,7 @@ const Signup = () => {
       }
     }
     // setActive(true);
+    navigate('/success');
   };
   
   // validation logic using regular expression
