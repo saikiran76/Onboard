@@ -27,7 +27,7 @@ const Signup = () => {
       console.log('effect triggered')
       navigate('/success')
     }
-  }, [active]);
+  }, [active, navigate]);
 
   // handler functions for validaiton of mail and password and submission button
   const handleEmailChange = (event) => {
@@ -52,10 +52,15 @@ const Signup = () => {
         console.log("control has reached here")
         setIsValid(true)
         setActive(true);
+        
       }
     }
     // setActive(true);
-    navigate('/success');
+    if(isValid){
+      navigate("/success")
+
+    }
+    
   };
   
   // validation logic using regular expression

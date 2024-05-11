@@ -19,9 +19,9 @@ export const ValidButton = forwardRef(({ bgColor, textColor, name, disabled, err
 
   return (
     <div
-      className={`${bgColor} rounded-3xl p-4 ${disabled ? 'opacity-50 cursor-pointer' : width} h-12 mb-2 ${
+      className={`${bgColor} rounded-3xl p-4 ${disabled ? 'opacity-50 cursor-pointer':'hover-bg-black'} h-12 mb-2 ${
         textColor
-      } ${isHovering && disabled ? 'hover:bg-zinc-900 hover:text-zinc-900 duration-200 delay-100 cursor-pointer' : ''}cursor-pointer hover:bg-gray-900`}
+      } ${isHovering && disabled ? 'hover:bg-zinc-900 hover:text-zinc-900 duration-200 delay-100 cursor-pointer' : ''}cursor-pointer hover:bg-black`}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
